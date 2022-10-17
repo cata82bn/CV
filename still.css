@@ -1,0 +1,83 @@
+* {
+  /* - selecteaza toate etichtele*/
+  box-sizing: border-box; /* - se foloseste la calculul continut + padding + border margins*/
+
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  margin: 0;
+  display: flex; /*se va reflecta aranjamentul in elementele copil*/
+  flex-direction: row; /* afisam elementele pe randuri*/
+  flex-wrap: wrap; /*trecerea textului pe mai multe randuri*/
+}
+
+.container-stanga {
+  width: 30%;
+  background-color: aquamarine;
+  padding: 30px; /*toate laturile au 30px*/
+  border-right: 2px solid cadetblue; /*2px grosimea, solid:tipul, ultima culoarea*/
+}
+
+.container-dreapta {
+  width: 70%;
+  padding: 30px;
+}
+
+.imagine-persoana {
+  border-radius: 50%;
+  border: 2px solid rgb(red, green, blue);
+  display: block;
+  margin-right: auto;
+  margin-top: 30px;
+  margin-bottom: 30px; /* scriere mai usoara :margin px auto*/
+  margin-left: auto;
+}
+
+h1 {
+  color: rgb(red, green, blue);
+  text-transform: uppercase; /*transforma textul in litere mari*/
+}
+
+h3 {
+  border-bottom: 2px solid rgb(red, green, blue);
+}
+
+ul {
+  padding-left: 15px;
+}
+
+h4,
+p {
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+
+.buton-mai-mult {
+  padding: 5px;
+  font-weight: bold;
+  display: inline-block;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  cursor: pointer;
+}
+
+.sectiune {
+  margin-top: 10x;
+  margin-bottom: 20px;
+}
+.element-ascuns {
+  display: none;
+}
+
+/*Responsiveness*/
+@media screen and (max-width: 760px) {
+  .container-stanga {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid rgb(red, green, blue);
+  }
+  .container-dreapta {
+    width: 100%;
+  }
+}
